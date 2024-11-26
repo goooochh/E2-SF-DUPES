@@ -5,11 +5,10 @@
             COLOR = vec(255,255,255) # Cvet blindera v RGB vec(R,G,B)
             SOUND = "synth/square.wav" # Zvuk blindera
             PITCH = 100 # Pitch zvuka (po defoltu = 100)
-    } 
     # Nizhe budet idti prosto code
     # Menyat cod tolko esli ti znaesh chto delaesh, moj xoroshij bakteria!
     # Ot Gooch'a
-if(first()){
+
      if(PLAYER:isValid()){
 	holoCreate(Blinder)
 	holoColor(Blinder,COLOR)

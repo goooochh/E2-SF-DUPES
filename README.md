@@ -19,12 +19,19 @@ Open an Issue and i'll delete it from here.
 
 ### Expression 2
 E2_afk_mine: Просто вращает над вами три буковки. A.F.K /// Just rotates over you three letters. A.F.K
+
 E2_bombkaka_mine: На букву h раз в ~0.33 секунды выстреливает комбайн-бомбой в разные стороны от себя. /// Pressing key "h" would shoot from the sphere with combine bombs in ~0.33 secs 
+
 E2_e2printer_mine: Ставите - принтит все Е2 чипы на сервере. // On placing - prints all E2 chips on a server.
+
 E2_helicoptercontrol_notmine: Контроль вертолета, чтобы заработал, подключите инпуты чипа к определенным wire-элементам. (собственно, поставьте) /// Helicopter control. To work, connect all chip inputs to correct wire elements
+
 E2_kamikadzesharik_mine: На h смешно пиликает над вами. На n взрывается. /// Press H - beebeebee. Press N - boom
+
 E2_mingeblinder_mine: Просто блиндер. В коде понятные настройки. /// Just a blinder. Settings in code
+
 E2_rainbowkitchen_mine: Безделушка. Создает кухню летающую по своей оси. /// Useless. Just creates a kitchen that rotates around its axis.
+
 E2_spinballs_mine: Тоже безделушка. Создает шарики с трейлом вокруг вас. /// Again useless thing. Creates balls with trails around you
 
 ### StarfallEx

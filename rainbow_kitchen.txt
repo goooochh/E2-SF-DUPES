@@ -1,0 +1,58 @@
+@name Raduzhnaya Kuhnya
+@persist A
+if(first()){
+    holoCreate(1)
+    holoCreate(2)
+    holoCreate(3)
+    holoCreate(4)
+    holoCreate(5)
+    holoCreate(6)
+    holoCreate(7)
+    holoCreate(8)
+    holoModel(1,"models/props_c17/FurnitureFridge001a.mdl")
+    holoModel(2,"models/props_c17/FurnitureRadiator001a.mdl")
+    holoModel(3,"models/props_c17/furnitureStove001a.mdl")
+    holoModel(4,"models/props_c17/FurnitureSink001a.mdl")
+    holoModel(5,"models/props_c17/FurnitureBoiler001a.mdl")
+    holoModel(6,"models/props_c17/FurnitureWashingmachine001a.mdl")
+    holoModel(7,"models/props_junk/PlasticCrate01a.mdl")
+    holoModel(8,"models/props_junk/PopCan01a.mdl")
+    holoEntity(1):setTrails(10,0,3.2,"trails/smoke",vec4(255,2,2,255))
+    holoEntity(2):setTrails(10,0,3.2,"trails/smoke",vec4(2,255,2,255))
+    holoEntity(3):setTrails(10,0,3.2,"trails/smoke",vec4(5,5,255,255))
+    holoEntity(4):setTrails(10,0,3.2,"trails/smoke",vec4(255,255,255,255))
+    holoEntity(5):setTrails(10,0,3.2,"trails/smoke",vec4(255,255,5,255))
+    holoEntity(6):setTrails(10,0,3.2,"trails/smoke",vec4(5,255,255,255))
+    holoEntity(7):setTrails(10,0,3.2,"trails/smoke",vec4(255,5,255,255))
+    holoEntity(8):setTrails(10,0,3.2,"trails/smoke",vec4(5,5,5,255))
+    holoColor(1,vec(255,0,0))
+    holoColor(2,vec(0,255,0))
+    holoColor(3,vec(0,0,255))
+    holoColor(5,vec(250,250,5))
+    holoColor(6,vec(0,250,255))
+    holoColor(7,vec(255,0,255))
+    holoColor(8,vec(5,5,5))
+    
+}
+event tick () {
+    A += 3
+                        Angles = A
+
+                        Offset1 = vec(100 * cos(Angles), 100 * sin(Angles), 20)
+                        Offset2 = vec(300 * cos(Angles + 90), 300 * sin(Angles + 90), 40)
+                        Offset3 = vec(400 * cos(Angles + 170), 400 * sin(Angles + 170), 60)
+                        Offset4 = vec(500 * cos(Angles + 250), 500 * sin(Angles + 250), 80)
+                        Offset5 = vec(600 * cos(Angles + 280), 600 * sin(Angles + 280), 100)
+                        Offset6 = vec(700 * cos(Angles + 310), 700 * sin(Angles + 310), 120)
+                        Offset7 = vec(800 * cos(Angles + 330), 800 * sin(Angles + 330), 140)
+                        Offset8 = vec(900 * cos(Angles + 350), 900 * sin(Angles + 350), 160)
+                        
+    holoPos(1,entity():pos()+vec(0,0,50)+Offset1)
+    holoPos(2,entity():pos()+vec(0,0,50)+Offset2)
+    holoPos(3,entity():pos()+vec(0,0,50)+Offset3)
+    holoPos(4,entity():pos()+vec(0,0,50)+Offset4)
+    holoPos(5,entity():pos()+vec(0,0,50)+Offset5)
+    holoPos(6,entity():pos()+vec(0,0,50)+Offset6)
+    holoPos(7,entity():pos()+vec(0,0,50)+Offset7)
+    holoPos(8,entity():pos()+vec(0,0,50)+Offset8)
+}

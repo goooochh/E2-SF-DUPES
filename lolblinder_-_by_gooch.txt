@@ -1,0 +1,36 @@
+@name LolBlinder - by Gooch
+@persist Blinder:number COLOR:vector SOUND:string PLAYER:entity PITCH:number
+    if(first()){ # Zna4eni      
+            PLAYER = findPlayerByName("Gooch") # Priblezitelniy nick igroka, na kotorom budet blinder. P.S. - Mozhesh ukazat sebya D:
+            COLOR = vec(255,255,255) # Cvet blindera v RGB vec(R,G,B)
+            SOUND = "synth/square.wav" # Zvuk blindera
+            PITCH = 100 # Pitch zvuka (po defoltu = 100)
+    } 
+    # Nizhe budet idti prosto code
+    # Menyat cod tolko esli ti znaesh chto delaesh, moj xoroshij bakteria!
+    # Ot Gooch'a
+if(first()){
+     if(PLAYER:isValid()){
+	holoCreate(Blinder)
+	holoColor(Blinder,COLOR)
+	holoScale(Blinder,vec(-5))
+	holoModel(Blinder,"hq_icosphere")
+	holoPos(Blinder, PLAYER:attachmentPos("anim_attachment_head"))
+	holoParentAttachment(Blinder,PLAYER,"anim_attachment_head")
+	holoEntity(Blinder):soundPlay(Blinder,40,SOUND)
+	soundPitch(Blinder,PITCH)
+	}
+}
+#[
+ Nekotorie Zvuki:
+ synth/square.wav
+ synth/sine.wav
+ synth/saw.wav
+ synth/25_pwm_1760.wav
+ synth/square.wav
+ ambient/atmosphere/city_beacon_loop1.wav - REKOMENDUJU STAVIT PITCH S ETIM ZVUKOM NA 180
+ ambient/energy/force_field_loop1.wav - PITCH: 255
+ Ti mozhesh uzat luboj kotorij zaxochesh, eto tolko samii prikolnii
+#]
+
+

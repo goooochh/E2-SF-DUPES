@@ -1,0 +1,34 @@
+@persist A
+if(first()){
+    holoCreate(1)
+    holoCreate(2)
+    holoCreate(3)
+    holoCreate(4)
+    holoModel(1,"hq_icosphere")
+    holoModel(2,"hq_icosphere")
+    holoModel(3,"hq_icosphere")
+    holoModel(4,"hq_icosphere")
+    holoEntity(1):setTrails(10,0,3.2,"trails/laser",vec4(255,255,255,255))
+    holoEntity(2):setTrails(10,0,3.2,"trails/laser",vec4(252,255,255,255))
+    holoEntity(3):setTrails(10,0,3.2,"trails/laser",vec4(255,255,255,255))
+    holoEntity(4):setTrails(10,0,3.2,"trails/laser",vec4(255,255,255,255))
+    holoColor(1,vec(2,0,0))
+    holoColor(2,vec(0,2,0))
+    holoColor(3,vec(0,0,2))
+    holoColor(4,vec(5,5,5))
+    
+}
+event tick () {
+    A += 8
+                        Angles = A
+
+                        Offset1 = vec(100 * cos(Angles), 100 * sin(Angles), -10)
+                        Offset2 = vec(100 * cos(Angles + 90), 100 * sin(Angles + 90), 0)
+                        Offset3 = vec(100 * cos(Angles + 170), 100 * sin(Angles + 170), 10)
+                        Offset4 = vec(100 * cos(Angles + 250), 100 * sin(Angles + 250), 20)
+                        
+    holoPos(1,owner():pos()+vec(0,0,50)+Offset1)
+    holoPos(2,owner():pos()+vec(0,0,50)+Offset2)
+    holoPos(3,owner():pos()+vec(0,0,50)+Offset3)
+    holoPos(4,owner():pos()+vec(0,0,50)+Offset4)
+}

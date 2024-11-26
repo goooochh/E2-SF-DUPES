@@ -1,0 +1,13 @@
+if (first()){
+    
+    findByClass("gmod_wire_expression2")
+    findSortByDistance(owner():pos())
+    Chips = findToArray()
+    
+    for (A=1,Chips:count()){
+        BU = Chips[A,entity]
+        print(BU:owner():name(),": ",BU:getName()," /// Ops: ",floor(BU:cpuUsage()*1000000))
+    }
+}
+
+selfDestruct()

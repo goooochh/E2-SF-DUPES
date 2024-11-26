@@ -5,16 +5,16 @@ This repository will be an archive for some StarfallEx, E2, ADV2 dupes files.
 ## How to upload txt files into GMod?
 
 - You have to go by these directions:
-  1. C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\advdupe2
-  2. C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\expression2
-  3. C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\starfall
+  DUPES: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\advdupe2
+  E2's: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\expression2
+  Starfalls: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\starfall
 
   And put there the files.
-
+(пути по которым надо положить желаемые файлы конкретного формата)
 ## Hey-hey! It's MY chip(or dupe) and i DO NOT want to see it here!
 
 Open an Issue and i'll delete it from here.
-
+(если вдруг здесь есть ваш чип, который вы не хотите видеть, отпишите мне в Issues)
 ## Что все чипы делают? /// What all of these chips are doing?
 
 ### Expression 2

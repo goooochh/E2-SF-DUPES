@@ -13,4 +13,4 @@ This repository will be an archive for some StarfallEx, E2, ADV2 dupes files.
 
 ## Hey-hey! It's MY chip(or dupe) and i DO NOT want to see it here!
 
-contact me and i'll delete it lol
+Open an Issue and i'll delete it from here.

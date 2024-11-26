@@ -5,8 +5,11 @@ This repository will be an archive for some StarfallEx, E2, ADV2 dupes files.
 ## How to upload txt files into GMod?
 
 - You have to go by these directions:
+  
   DUPES: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\advdupe2
+  
   E2's: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\expression2
+  
   Starfalls: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\starfall
 
   And put there the files.

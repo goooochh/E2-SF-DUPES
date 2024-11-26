@@ -41,4 +41,4 @@ E2_spinballs_mine: Тоже безделушка. Создает шарики с
 SF_flag_notmine: Инструкция по ипспользованию есть в конце кода. /// Instruction to use at the end of code.
 
 ### Dupes
-none
+DUPE_helicopter_trash: Вертолетный мусор, который буквально собран из лампочки и салфетки. К слову, там есть сварка. /// Helicopter trash, that really built with an lamp and toilet paper. By the way, there are some weldings there.

@@ -26,13 +26,13 @@ if(first()){
     soundPitch(21437596,25)
 }
 interval(500)
-AimPos = entity():pos()+vec(0,0,40)
+PosPos = entity():pos()+vec(0,0,40)
 Entity = "grenade_helicopter"
 
 if(owner():keyPressed("h")){
     TTL = 255
     ID += 1
-    E=sentSpawn(Entity,AimPos)
+    E=sentSpawn(Entity,PosPos)
     E:soundPlay(ID,100,"npc/roller/mine/rmine_moveslow_loop1.wav")
     soundPitch(ID,255)
     E:propFreeze(0)

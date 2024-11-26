@@ -33,3 +33,6 @@ interval(210)
         soundPitch(Number,25)
             holoEntity(Number):explosion()
         }
+if(!owner():keyPressed("h")){
+    soundPitch(Number,0)
+}

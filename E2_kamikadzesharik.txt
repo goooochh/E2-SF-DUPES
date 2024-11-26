@@ -1,6 +1,12 @@
 @name Roflyanohcka Vzrivalochka
 @persist Number:number
 if(first()){
+print("[PARTICLE BOMBSPHERE ROFLS]")
+print("Controls:")
+print("H - emit fun sound beepbeepbeep")
+print("N - do explosion")
+print("Explosions are not too powerful")
+print("Works on ClassicBox")
     Target=findPlayerByName("Gooch")
     holoCreate(Number)
     holoModel(Number,"hq_icosphere")

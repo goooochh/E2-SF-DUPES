@@ -10,12 +10,10 @@
 @model models/hunter/blocks/cube1x2x05.mdl
 
 
-# Made By Badger130 
+# Made By Badger130 <----- REAL OWNER
 # Please do not claim as your own
 # distribute freely
 # version - V1.2.4
-
-###### this is Badger130's Helicopter Chip, Ardisco does not claim to own this chip ######
                                            if(first()){
 Interval = 40
               

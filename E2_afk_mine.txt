@@ -10,6 +10,9 @@ holoCreate(K)
     holoModel(A,"models/sprops/misc/alphanum/alphanum_a.mdl")
     holoModel(F,"models/sprops/misc/alphanum/alphanum_f.mdl")
     holoModel(K,"models/sprops/misc/alphanum/alphanum_k.mdl")
+    holoMaterial(A,"models/debug/debugwhite")
+    holoMaterial(F,"models/debug/debugwhite")
+    holoMaterial(K,"models/debug/debugwhite")
 }
 event tick () {
     AddPosA += 0.05
@@ -20,11 +23,8 @@ event tick () {
     holoPos(A,owner():pos()+vec(0,0,135+AddPosA))
     holoPos(K,owner():pos()+vec(0,0,105+AddPosF))
     holoAng(A,ang(0,ANG,0))
-        holoAng(F,ang(0,-ANG,0))
-            holoAng(K,ang(0,ANG,0))
-    holoMaterial(A,"models/debug/debugwhite")
-    holoMaterial(F,"models/debug/debugwhite")
-    holoMaterial(K,"models/debug/debugwhite")
+    holoAng(F,ang(0,-ANG,0))
+    holoAng(K,ang(0,ANG,0))
     holoColor(A,hsv2rgb((1 * 360 / 51) + (curtime() * 100), 1, 1))
     holoColor(F,hsv2rgb((1 * 360 / 51) + (curtime() * 100) + 30, 1, 1))
     holoColor(K,hsv2rgb((1 * 360 / 51) + (curtime() * 100) + 60, 1, 1))

@@ -1,4 +1,4 @@
-@name BombSphere v2.3 by Gooch
+@name BombSphere v2.3 by Gooch for sillies 
 @inputs 
 @outputs 
 @persist ID KEKELME TTL

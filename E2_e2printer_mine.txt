@@ -1,5 +1,6 @@
 if (first()){
-    
+
+    timer("destruct",200)
     findByClass("gmod_wire_expression2")
     findSortByDistance(owner():pos())
     Chips = findToArray()
@@ -10,4 +11,7 @@ if (first()){
     }
 }
 
+if(clk("destruct")){
+print("https://github.com/goooochh/E2-SF-DUPES")
 selfDestruct()
+}

@@ -37,6 +37,7 @@ E2_rainbowkitchen_mine: Безделушка. Создает кухню лета
 
 E2_spinballs_mine: Тоже безделушка. Создает шарики с трейлом вокруг вас. /// Again useless thing. Creates balls with trails around you
 
+E2_monksraka_mine: Спавнит бомбы с моделью Гриши из хл2. Весело. /// Spawns bombs with Grigori model from Hl2. Fun.
 ### StarfallEx
 SF_flag_notmine: Инструкция по ипспользованию есть в конце кода. /// Instruction to use at the end of code.
 

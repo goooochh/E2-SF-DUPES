@@ -1,9 +1,15 @@
-@name Kakish 
+@name Monk Bombs for sillies
+@persist [Height Radius]:number Model:string
+if(first()){
+  Model = "models/monk.mdl"
+  Height = 2000
+  Radius = 1200
+}
 interval(500)
 if(owner():keyPressed("h")){
-local E = propSpawn("models/props_phx/mk-82.mdl",entity():pos()+vec(random(-1200,1200),random(-1200,1200),2000),1)
+local E = propSpawn("models/props_phx/mk-82.mdl",entity():pos()+vec(random(-Radius,Radius),random(-Radius,Radius),Height),1)
 E:propFreeze(0)
-E:setModel("models/monk.mdl")
+E:setModel(Model)
 E:emitSound("vo/ravenholm/madlaugh0"+randint(1,4)+".wav",505,255)
 }
 

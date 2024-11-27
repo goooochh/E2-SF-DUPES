@@ -1,0 +1,9 @@
+@name Kakish 
+interval(500)
+if(owner():keyPressed("h")){
+local E = propSpawn("models/props_phx/mk-82.mdl",entity():pos()+vec(random(-1200,1200),random(-1200,1200),2000),1)
+E:propFreeze(0)
+E:setModel("models/monk.mdl")
+E:emitSound("vo/ravenholm/madlaugh0"+randint(1,4)+".wav",505,255)
+}
+

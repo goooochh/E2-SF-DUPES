@@ -1,6 +1,7 @@
 @name AFK text for sillies
 @persist A F K AddPosA AddPosF AddPosK ANG
 if(first()){
+print("https://github.com/goooochh/E2-SF-DUPES")
     A=1
     F=2
     K=3

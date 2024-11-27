@@ -1,5 +1,7 @@
+@name Spinning Balls for sillies
 @persist A
 if(first()){
+print("https://github.com/goooochh/E2-SF-DUPES")
     holoCreate(1)
     holoCreate(2)
     holoCreate(3)

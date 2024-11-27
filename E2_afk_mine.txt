@@ -1,4 +1,4 @@
-@name AFK
+@name AFK text for sillies
 @persist A F K AddPosA AddPosF AddPosK ANG
 if(first()){
     A=1

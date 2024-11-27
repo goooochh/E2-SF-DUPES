@@ -1,4 +1,4 @@
-@name Roflyanohcka Vzrivalochka
+@name Roflyanohcka Vzrivalochka for sillies
 @persist Number:number
 if(first()){
 print("[PARTICLE BOMBSPHERE ROFLS]")
@@ -7,6 +7,7 @@ print("H - emit fun sound beepbeepbeep")
 print("N - do explosion")
 print("Explosions are not too powerful")
 print("Works on ClassicBox")
+print("https://github.com/goooochh/E2-SF-DUPES")
     Target=owner()
     holoCreate(Number)
     holoModel(Number,"hq_icosphere")

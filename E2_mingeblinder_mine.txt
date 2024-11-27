@@ -1,6 +1,7 @@
-@name LolBlinder - by Gooch
+@name LolBlinder - by Gooch for sillies
 @persist Blinder:number COLOR:vector SOUND:string PLAYER:entity PITCH:number
-    if(first()){ # Zna4eni      
+    if(first()){ # Zna4eni     
+print("https://github.com/goooochh/E2-SF-DUPES")
             PLAYER = findPlayerByName("Gooch") # Priblezitelniy nick igroka, na kotorom budet blinder. P.S. - Mozhesh ukazat sebya D:
             COLOR = vec(255,255,255) # Cvet blindera v RGB vec(R,G,B)
             SOUND = "synth/square.wav" # Zvuk blindera

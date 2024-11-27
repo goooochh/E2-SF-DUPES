@@ -5,6 +5,7 @@
 @strict
 
 if(first()){
+print("https://github.com/goooochh/E2-SF-DUPES")
     TTL = 60
     KEKELME = 0
     ID = 1

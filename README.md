@@ -1,4 +1,3 @@
-Hello there.
 
 This repository will be an archive for some StarfallEx, E2, ADV2 dupes files.
 

@@ -1,0 +1,28 @@
+@name Jet Control by Gooch - 1.0
+@outputs T Active
+@persist T Vel Timer SoundFixTimer SoundFix
+E=entity():isWeldedTo()
+if(first() | dupefinished()){   B = 1 runOnTick(1)  Colour=vec(35)  E:setMass(50000) entity():setMass(0) print("WARNING! CHIP IS IN BETA AND CAN BE BUGGY!")}
+Chair=entity():isWeldedTo() Driver=Chair:driver() W=Driver:keyForward() S=Driver:keyBack() Rvel=E:angVel():roll() Pvel=E:angVel():pitch() Yvel=E:angVel():yaw() Pd=E:angles():pitch()/100 R1=E:angles():roll()/100 Range=rangerOffset(100,E:pos()+vec(0,0,-8),-E:up())
+Height=Range:distance() E:applyForce(-E:vel()*E:mass()) E:applyAngForce(ang(Rvel,-Yvel,-Pvel)*E:mass()) E:applyForce(vec(0,0,1)*E:mass()*7.511255)
+if(Height<57.5|!Driver){ E:applyForce(vec(0,0,1)*E:mass()*(57.5-Height)) E:applyForce(-vec(0,0,1)*E:mass()*5*(Height-57.5))}
+E:applyAngForce(ang(R1,0,-Pd)*E:mass()*100)
+if(Driver){
+if(Height>57.5){Y=vec(Driver:eye():dot(Chair:right()),Driver:eye():dot(Chair:right()),0):y()}
+else{Y=0}
+if(Vel>750){P=vec(0,Driver:eye():dot(Chair:up()),Driver:eye():dot(Chair:up())):z()    }
+else{P=0}
+E:applyAngForce(ang(-P,-Y,Y)*E:mass()*100)}
+Forward=E:forward()*E:mass()*150
+E:applyForce((Forward+$Forward)*T)
+if(W){T+=0.03}
+if(S|!Driver){T-=0.03}
+elseif(S&Height<40){T-=0.009}
+if(T<0){T=0}
+if(T>12){T=12}
+Vel=E:vel():length()
+if(Driver&T<2&Height>60){E:applyForce(-vec(0,0,1)*E:mass()*100)    T=2}
+if(E:driver()){Active=1}
+else{Active=0}
+if(changed(Active)&Active){E:hintDriver("Ot Gooch",7)}
+    if(Chair:type()!="prop_vehicle_prisoner_pod"){selfDestruct() print("PLACE ON SEAT")}

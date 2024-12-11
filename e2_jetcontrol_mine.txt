@@ -1,0 +1,40 @@
+@name Jet Control by Gooch
+@outputs T
+@persist T Velocity Timer SoundFixTimer SoundFix
+E=entity():isWeldedTo()
+if(first() | dupefinished()){Chair=entity():isWeldedTo() Chair=entity():isWeldedTo() runOnTick(1)  E:setMass(50000)  entity():setMass(0)   E:setAlpha(0)}
+Driver=Chair:driver()
+W=Driver:keyForward()
+S=Driver:keyBack()
+Rvel=E:angVel():roll()
+Pvel=E:angVel():pitch()
+Yvel=E:angVel():yaw()
+AngleA=E:angles():pitch()/100
+AngleB=E:angles():roll()/100
+Range=rangerOffset(100,E:pos()+vec(0,0,-8),-E:up())
+Height=Range:distance()
+E:applyForce(-E:vel()*E:mass())
+E:applyAngForce(ang(Rvel,-Yvel,-Pvel)*E:mass())
+E:applyForce(vec(0,0,1)*E:mass()*7.511255)
+if(Height<57.5|!Driver){E:applyForce(vec(0,0,1)*E:mass()*(57.5-Height)) E:applyForce(-vec(0,0,1)*E:mass()*5*(Height-57.5))}
+E:applyAngForce(ang(AngleB,0,-AngleA)*E:mass()*100)
+if(Driver){
+if(Height>57.5){Y=vec(Driver:eye():dot(Chair:right()),Driver:eye():dot(Chair:right()),0):y()}
+else{Y=0}
+if(Velocity>750){P=vec(0,Driver:eye():dot(Chair:up()),Driver:eye():dot(Chair:up())):z()    }
+else{P=0}
+E:applyAngForce(ang(-P,-Y,Y)*E:mass()*100)
+Speed=E:vel():length()}
+Forward=E:forward()*E:mass()*150
+E:applyForce((Forward+$Forward)*T)
+if(W){T+=0.03}
+if(S|!Driver){T-=0.03}
+elseif(S&Height<40){T-=0.009}
+if(T<0){T=0}
+if(T>12){T=12}
+Velocity=E:vel():length()
+if(Driver&T<2&Height>60){E:applyForce(-vec(0,0,1)*E:mass()*100)    T=2}
+if(E:driver()){   Active=1}
+else{Active=0}
+if(changed(Active)&Active){E:hintDriver("By Gooch",7)}
+

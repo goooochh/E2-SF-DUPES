@@ -2,7 +2,7 @@
 @outputs T
 @persist T Velocity Timer SoundFixTimer SoundFix
 E=entity():isWeldedTo()
-if(first() | dupefinished()){Chair=entity():isWeldedTo() Chair=entity():isWeldedTo() runOnTick(1)  E:setMass(50000)  entity():setMass(0)   E:setAlpha(0)}
+if(first() | dupefinished()){Chair=entity():isWeldedTo() Chair=entity():isWeldedTo() runOnTick(1)  E:setMass(50000)  entity():setMass(0)   E:setAlpha(0) print("WARNING! CHIP IS IN BETA AND COULD BE BUGGY!")}
 Driver=Chair:driver()
 W=Driver:keyForward()
 S=Driver:keyBack()

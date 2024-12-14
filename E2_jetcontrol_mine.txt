@@ -2,7 +2,7 @@
 @inputs Chair:entity
 @outputs T Active
 @persist T Vel Timer SoundFixTimer SoundFix
-if(first()){B = 1 runOnTick(1) entity():setMass(0) print("WARNING! CHIP IS IN BETA AND CAN BE BUGGY!")}
+if(first()){B = 1 runOnTick(1) entity():setMass(0) print("WARNING! CHIP IS IN BETA AND CAN BE BUGGY! https://github.com/goooochh/E2-SF-DUPES")}
 if(Chair:isValid()){
 Driver=Chair:driver() W=Driver:keyForward() S=Driver:keyBack() Rvel=Chair:angVel():roll() Pvel=Chair:angVel():pitch() Yvel=Chair:angVel():yaw() Pd=Chair:angles():pitch()/100 R1=Chair:angles():roll()/100 Range=rangerOffset(100,Chair:pos()+vec(0,0,-8),-Chair:up())
 Height=Range:distance() Chair:applyForce(-Chair:vel()*Chair:mass()) Chair:applyAngForce(ang(Rvel,-Yvel,-Pvel)*Chair:mass()) Chair:applyForce(vec(0,0,1)*Chair:mass()*7.511255)

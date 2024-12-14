@@ -26,6 +26,6 @@ if(Driver&T<2&Height>60){Chair:applyForce(-vec(0,0,1)*Chair:mass()*100)    T=2}
 if(Chair:driver()){Active=1}
 else{Active=0}
 if(changed(Active)&Active){Chair:hintDriver("Ot Gooch",7)}
-if(Chair:type()!="prop_vehicle_prisoner_pod"){selfDestruct() print("LINK TO SEAT")}
+if(Chair:type()!="prop_vehicle_prisoner_pod"){Chair:setColor(vec(255,0,0)) selfDestruct() print("LINK TO SEAT") entity():emitSound("buttons/button10.wav")}
 }
 if(dupefinished()){reset()}
